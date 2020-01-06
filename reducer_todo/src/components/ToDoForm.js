@@ -1,13 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function ToDoForm(){
-    
-    handleChange = () => {
 
+    const {listItem, setListItem} = useState();
+
+    handleChange = (event) => {
+        setListItem(event.target.value)
     }
 
-    handleSubmit = () => {
-
+    handleSubmit = (event) => {
+        event.preventDefault
     }
     return(
         <div>
